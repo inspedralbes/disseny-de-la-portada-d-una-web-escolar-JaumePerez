@@ -1,0 +1,95 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+  font-size: 14px;
+  text-align: justify
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  word-spacing: 3px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #06abea;
+  border-bottom: 5px solid #06abea;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+header>h1 {
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+section>h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+section>h2:hover,
+header>h1:hover {
+  text-shadow: 2px 2px 3px;
+}
+
+h2+p {
+  text-indent: 20px;
+}
+
+li {
+  line-height: 18px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  background-color: red;
+}
+
+.wrapper div {
+  background-color: #06abea;
+}
